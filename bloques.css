@@ -1,0 +1,95 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.page
+{
+	width: 900px auto;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.morado{
+	background-color: #CDC2EA;
+	display: flex;
+	width: 900px;
+	height: 150px;
+	padding: center;
+	align-items: center;
+	border: 1px solid black;
+	justify-content: space-between;
+}
+
+
+.rosa
+{
+	background-color:  #ffb6c1;
+	display: flex;
+	width: 250px;
+	height: 50px;
+	border: 1px solid black;
+	justify-content: center;
+}
+
+.rosad{
+	background-color:  #ffb6c1;
+	display: flex;
+	width: 250px;
+	height: 50px;
+	border: 1px solid black;
+	justify-content: center;
+}
+
+.B2
+{
+	width: 800px auto;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	border: 1px solid black;
+}
+
+
+.amarillo
+{
+	background-color: #ffd700;
+	display: flex;
+	width: 100px;
+	height:100px;
+	border: 1px solid black;
+}
+
+.azul{
+	background-color:  #4682b4;
+	display: flex;
+	width: 700px;
+	height: 350px;
+	align-items: flex-end;
+	justify-content: space-around;
+	/*border: 1px solid black;*/
+}
+
+.Cvertical{
+	background-color:  #cd853f;
+	display: flex;
+	width: 200px;
+	height:350px;
+	flex-direction: column;
+	align-items: center;
+	border-left: 1px solid black;
+}
+
+.cafe_am
+{
+	background-color:  #ffe4c4;
+	display: flex;
+	width: 900px;
+	height:100px;
+	border: 1px solid black;
+	justify-content:  center;
+}
