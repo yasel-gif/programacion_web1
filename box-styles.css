@@ -1,0 +1,56 @@
+*{									/*agregar esta regla en el doc de esilo siempre para resetear estilos*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.page{
+	width: 700px;
+	margin: 0 auto;
+	background-color: #000000;
+}
+em{
+	font-style: oblique;
+}
+
+h1{
+	font-family: monospace;
+	font-size: 45px;
+	padding: 40px; /*titulo (Curriculum Vitae)*/
+	border: 4px solid #5D6063;
+	background-color: #9932cc;
+}
+
+h2{ /*Subtitulos*/
+	font-family:fantasy;
+	font-size: 20px;
+	padding: 10px 0 20px 10px; /*ancho, vertical horizontal*/
+	margin-top: 10px; /*Separacion entre bloques*/
+ 	margin-bottom: 50 px;
+	background-color: #dda0dd; /*color de fondo para p*/
+}
+
+p{
+	/*Parrafos*/
+	font-size: 17px;
+	color:#db7093;
+}
+
+
+strong{
+	margin:50px;
+	padding: 50px;
+}
+
+div{
+	color:#1E0B34;
+	background-color:#800080;
+	font-weight:bold;
+	padding: 20px;
+	text-align:center;
+	border: 2px solid #5D6063;
+	border-radius: 10px;
+	width: 200px;
+	box-sizing: border-box;
+	margin: 20px auto; /*vertical horizontal */
+}
