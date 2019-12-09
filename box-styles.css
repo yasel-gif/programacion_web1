@@ -4,53 +4,111 @@
 	box-sizing: border-box;
 }
 
-.page{
-	width: 700px;
-	margin: 0 auto;
-	background-color: #000000;
-}
-em{
-	font-style: oblique;
+.contenedor {
+	background:#dda0dd; /*color fondo contenedor*/
+	width:90%;
+	max-width:700px;
+	margin:auto;
+
+	/* Flexbox */
+	display:flex;
+	flex-flow:row wrap;
 }
 
-h1{
+header {
+	background:#dda0dd; /*color fondo titulo*/
+	width:100%;
+	padding:40px;  /*tamano header */
+
+	/* Flexbox */
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+
+	flex-direction:column;
+	flex-wrap:wrap;
+}
+
+header .logo {
+	color:#fff;
+}
+
+header .logo img {
+	width:100%;
+	vertical-align:middle;
+}
+
+header .logo a {
+	color:#800080; /*color letras titulo CV*/
+	font-size: 30%;
 	font-family: monospace;
-	font-size: 45px;
-	padding: 40px; /*titulo (Curriculum Vitae)*/
-	border: 4px solid #5D6063;
-	background-color: #9932cc;
+	text-decoration: none;
+	line-height:100px;
 }
 
-h2{ /*Subtitulos*/
-	font-family:fantasy;
-	font-size: 20px;
-	padding: 10px 0 20px 10px; /*ancho, vertical horizontal*/
-	margin-top: 10px; /*Separacion entre bloques*/
- 	margin-bottom: 50 px;
-	background-color: #dda0dd; /*color de fondo para p*/
+header nav {
+	width:40%; /* tamano bloques  */
+	/* Flexbox */
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	flex-direction:column;
 }
 
-p{
-	/*Parrafos*/
-	font-size: 17px;
-	color:#db7093;
+header nav a {
+	background:#800080; /*color cuadros */
+	color:#000; /*color letras */
+	text-align: center;
+	text-decoration: none;
+	padding:15px; /* ancho bloques  */
+ align-items: center;
+	/* Flexbox */
+	flex-grow:1;
 }
 
-
-strong{
-	margin:50px;
-	padding: 50px;
+header nav a:hover {
+	background:#A51DD4; /*color mouse sobre bloques*/
 }
 
-div{
-	color:#1E0B34;
-	background-color:#800080;
-	font-weight:bold;
-	padding: 20px;
-	text-align:center;
-	border: 2px solid #5D6063;
-	border-radius: 10px;
-	width: 200px;
-	box-sizing: border-box;
-	margin: 20px auto; /*vertical horizontal */
+@media screen and (max-width: 800px) {
+	.contenedor {
+		flex-direction:column;
+	}
+
+	header {
+		flex-direction:column;
+		padding:0;
+	}
+
+	header .logo {
+		margin:20px 0;
+	}
+
+	header nav {
+		width: 100%;
+	}
+
+	aside {
+		flex-direction:row;
+		flex:0;
+	}
+
+	aside .widget {
+		flex-grow:1;
+	}
 }
+
+@media screen and (max-width: 600px) {
+	aside {
+		flex-direction:column;
+	}
+
+	footer {
+		justify-content:space-around;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	aside {
+		flex-direction:column;
+	}
